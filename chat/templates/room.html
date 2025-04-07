@@ -18,11 +18,7 @@
     <script>
         const room_name = JSON.parse(document.getElementById('room_name').textContent);
         const socket = new WebSocket(
-            'ws://' +
-            window.location.host +
-            '/ws/chat/' + 
-            room_name +
-            '/'
+            'https://ai-bot-6608.onrender.com/chat/1/'
         );
 
         socket.onopen = function (event) {
